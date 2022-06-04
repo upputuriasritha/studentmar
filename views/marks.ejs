@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <a href="/"> <button id="leaderboard_btnid" >Home</button> </a>
+
+    <a href="/leaderboard"> <button id="marks_btnid" >Leaderboard</button> </a>
+   </div>
+    <!-- <h1>Marks of students</h1> -->
+    
+    <form action="/update" method="POST">
+      <h2>Update Information</h2>
+      <p>Enter the roll no. of student whose information has to be updated </p>
+      <label for="input_roll_no" class="sr-only">Roll No.</label>
+      <input type="number" name="update_input" id="update_input" required autofocus>
+      <button id="search-btn" type="submit">Submit</button>
+  </form>
+
+  <form action="/marks" method="post" class="form-signin" style="margin-top:50px;">
+   
+    <h2 class="h3 mb-3 font-weight-normal" style="color:rgb(0, 0, 0);">New Entry:</h2>
+    <label for="input_roll_no" class="sr-only">Roll No.</label>
+    <input type="number"  class="form-control" id="input_roll_no" name="roll_no" required autofocus><br>
+    
+    <label for="input_name" class="sr-only">Name</label>
+    <input type="text"  class="form-control" id="input_name" name="name" placeholder="Name" required autofocus><br>
+
+    <label for="input_maths_marks" class="sr-only">Maths Marks</label>
+    <input type="number"  class="form-control" id="input_maths_marks" name="maths_marks" required autofocus><br>
+
+    <label for="input_physics_marks" class="sr-only">Physics Marks</label>
+    <input type="numer"  class="form-control" id="input_physics_marks" name="physics_marks"  required autofocus><br>
+
+    <label for="input_chemistry_marks" class="sr-only">Chemistry Marks</label>
+    <input type="number"  class="form-control" id="input_chemistry_marks" name="chemistry_marks"  required autofocus><br>
+
+       
+    
+    <div class="checkbox mb-3">
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+
+  </form>
+  
+    <script></script>
+</body>
+</html>
